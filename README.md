@@ -1,6 +1,6 @@
 # Huffman Coding
 
-This repository contains an implementation of Huffman Coding, a lossless data compression algorithm. The program allows you to compress an input text file into a compressed binary format and decompress it back into the original text.
+This repository contains an implementation of Huffman Coding, a lossless data compression algorithm. The program allows you to compress an input text file into a compressed binary format and decompress it back into the original text. This program was implemented as part of an assignment for Programming Abstractions.
 
 ## Features
 
