@@ -43,19 +43,23 @@ This repository contains an implementation of Huffman Coding, a lossless data co
 - **Huffman Files**: This contains files that you can compress and decompress using Huffman code!
 - **Assignment Starter**: Includes a set of test cases and any other necessary files for the program to run.
 
-## Usage
+## Encoding and Decoding Example
 
-Compile and run the program to compress and decompress text files. Modify the input file in the main function to test different examples.
-
-## Example Screenshot
-
-Below is an example of the program running with sample input:
+The diagram below is an encoding tree for the characters O N M and S. 
 ![Huffman Coding Example](https://github.com/silvam31/Huffman-Coding/blob/10fc0943746bff5d12fc891e940a526a9002f8b2/huffman_example1.png)
 
-To add your own screenshot:
-1. Run the program and take a screenshot.
-2. Upload the image to your repository.
-3. Replace the URL in the Markdown above with your uploaded image’s direct link.
+Each leaf node corresponds to a character. The path from root to a leaf node traces the sequence of bits that encode the node's character. In the diagram, interior nodes are marked with * for visualization purposes.
+
+We label the leftward branch zero and rightward one. The path from the root node to the leaf node S traces left-right-right which corresponds to the bit sequence 011.
+
+## Flattening and Unflattening Example
+
+The diagram below shows two encoding trees and their respective flattened bit representation and sequence of characters. 
+![Huffman Coding Example](https://github.com/silvam31/Huffman-Coding/blob/777d6658826ee2ee69a7658457d46afa08a6a3fb/huffman_example2.png)
+
+The sequence of bits describes the tree structure in the order that the tree nodes are visited in a pre-order traversal where 1 represents an interiror (or root) node and 0 represents a leaf node.
+
+The tree leaves are flattened into a sequence of characters by listing the characters of the leaf nodes as visited during an in-order traversal.
 
 ## Author
 
