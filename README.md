@@ -50,7 +50,7 @@ Compile and run the program to compress and decompress text files. Modify the in
 ## Example Screenshot
 
 Below is an example of the program running with sample input:
-![Huffman Coding Example](https://github.com/silvam31/Huffman-Coding/huffman_example1_png)
+![Huffman Coding Example](https://github.com/silvam31/Huffman-Coding/blob/10fc0943746bff5d12fc891e940a526a9002f8b2/huffman_example1.png)
 
 To add your own screenshot:
 1. Run the program and take a screenshot.
