@@ -59,7 +59,10 @@ The diagram below shows two encoding trees and their respective flattened bit re
 
 The sequence of bits describes the tree structure in the order that the tree nodes are visited in a pre-order traversal where 1 represents an interiror (or root) node and 0 represents a leaf node.
 
-The tree leaves are flattened into a sequence of characters by listing the characters of the leaf nodes as visited during an in-order traversal.
+The tree leaves are flattened into a sequence of characters by listing the characters of the leaf nodes as visited during an in-order traversal. 
+
+## Credits
+This assignment was completed at Stanford University in CS106B: Programming Abstractions. This course was instructed and facilitated by Chris Greg, Neel Kishnani, and associated teaching team. Huffman tree examples and descriptions are with reference to an explanation given by Julie Zelenski.
 
 ## Author
 
