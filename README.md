@@ -6,30 +6,42 @@ This repository contains an implementation of Huffman Coding, a lossless data co
 
 - **Compression**: Builds an optimal Huffman tree from input text and encodes it into a compressed binary representation.
 - **Decompression**: Reconstructs the Huffman tree and decodes the compressed binary data back into text.
-- **Tree Construction**: Implements a priority queue-based approach to generate the Huffman tree.
-- **Encoding and Decoding**: Uses the Huffman tree to map characters to unique bit sequences for efficient compression.
 
-## How It Works
+## How Compression Works
 
 1. **Build Huffman Tree**: 
    - Calculate frequency of each character in the input text.
-   - Construct a binary tree where lower-frequency characters have longer codes.
+   - Construct a binary tree where lower-frequency characters are farther down the tree.
    
 2. **Encode Text**:
-   - Generate a mapping of characters to their Huffman codes.
+   - Generate a mapping of characters to their bit representation based on the Huffman Tree.
    - Convert input text into a sequence of bits.
 
-3. **Store Compressed Data**:
-   - Save the encoded bit sequence along with the structure of the Huffman tree.
+3. **Flatten Tree**:
+   - Convert huffman tree to a bit representation.
 
-4. **Decode Compressed Data**:
-   - Reconstruct the Huffman tree.
-   - Traverse the tree using the bit sequence to recover the original text.
+4. **Store Compressed Data**:
+   - Save the encoded bit sequence along with the flattened Huffman tree.
+
+## How Decompression Works
+
+1. **Extract Compressed Data**:  
+   - Retrieve the stored bit sequence and the flattened Huffman tree from the compressed file.
+
+2. **Reconstruct Huffman Tree**:  
+   - Use the flattened tree structure to rebuild the original Huffman tree.
+
+3. **Decode Text**:  
+   - Traverse the reconstructed Huffman tree using the bit sequence.  
+   - Convert the bits back into their respective characters to recover the original text.
 
 ## Files
 
 - **`huffman.cpp`**: Main implementation of Huffman coding, including tree construction, encoding, and decoding.
 - **Other dependencies**: Uses `bits.h`, `treenode.h`, `huffman.h`, and additional utility libraries.
+- **`huffman.zip`**: This executes the Huffman program.
+- **Huffman Files**: This contains files that you can compress and decompress using Huffman code!
+- **Assignment Starter**: Includes a set of test cases and any other necessary files for the program to run.
 
 ## Usage
 
@@ -45,10 +57,6 @@ To add your own screenshot:
 1. Run the program and take a screenshot.
 2. Upload the image to your repository.
 3. Replace the URL in the Markdown above with your uploaded image’s direct link.
-
-## Testing
-
-Includes a set of test cases using the `SimpleTest` framework to validate encoding, decoding, and overall compression-decompression accuracy.
 
 ## Author
 
